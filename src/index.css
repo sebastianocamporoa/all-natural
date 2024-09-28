@@ -1,0 +1,57 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('/fonts/the-seasons.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.popup-enter {
+  @apply opacity-0;
+} 
+
+.popup-enter-active {
+  @apply transition-opacity duration-300 opacity-100;
+}
+
+.popup-exit {
+  @apply opacity-100;
+}
+
+.popup-exit-active {
+  @apply transition-opacity duration-300 opacity-0;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+  50% {
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+}
+
+.animate-zoom {
+  animation: zoom 3s ease-in-out;
+}
+
+body {
+  background-color: #f1e8d9;
+}
+
+.slick-dots {
+  bottom: 0px;
+}
