@@ -42,7 +42,7 @@ const Navbar: FC = () => {
 
 
   return (
-    <div className={`py-4 bg-white dark:bg-darkBg top-0 sticky z-10 shadow-lg font-theseasons transition-transform duration-300 ${showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
+    <div id="navbar" className={`py-4 dark:bg-darkBg top-0 sticky z-10 shadow-lg font-theseasons transition-transform duration-300 ${showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
       }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">

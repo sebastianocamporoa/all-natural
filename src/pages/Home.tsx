@@ -92,7 +92,7 @@ const Home: FC = () => {
   return (
     <>
       <div className="dark:bg-darkBg overflow-x-hidden">
-        {/* Slider sobre la sección de Hero */}
+        <HeroSection />
         <Slider {...settings}>
           {heroSlides.map((slide, index) => (
             <div key={slide.id}>
@@ -100,7 +100,6 @@ const Home: FC = () => {
             </div>
           ))}
         </Slider>
-        <HeroSection />
         <Features />
         <TrendingProducts />
         <Banner />
