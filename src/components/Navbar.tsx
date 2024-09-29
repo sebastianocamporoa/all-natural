@@ -53,16 +53,16 @@ const Navbar: FC = () => {
           >
             {!isDarkMode ? <img src="/logo.png" alt="Logo" className="h-28" /> : <img src="/logo-white.png" alt="Logo" className="h-28" />}
           </Link>
-          <div className="flex gap-4 md:gap-8 items-center dark:text-white">
+          <div className="flex gap-4 md:gap-8 items-center dark:text-white ">
             <Link
               to="/products"
-              className="text-xl font-bold"
+              className="text-xl font-bold hover:cursor-pointer hover:opacity-80"
               data-test="main-products"
             >
               Productos
             </Link>
             <div
-              className="text-gray-500 text-[32px] relative hover:cursor-pointer hover:opacity-80"
+              className="text-black text-[32px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}
               data-test="cart-btn"
             >
@@ -81,9 +81,9 @@ const Navbar: FC = () => {
               }}
             >
               {isDarkMode ? (
-                <MdOutlineLightMode className="cursor-pointer" size={30} />
+                <MdOutlineLightMode className="cursor-pointer hover:cursor-pointer hover:opacity-80" size={30} />
               ) : (
-                <MdOutlineDarkMode className="cursor-pointer" size={30} />
+                <MdOutlineDarkMode className="cursor-pointer hover:cursor-pointer hover:opacity-80" size={30} />
               )}
             </div>
           </div>
