@@ -55,3 +55,18 @@ body {
 .slick-dots {
   bottom: 0px;
 }
+
+.posts-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.posts-list li {
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.single-post {
+  margin: 20px 0;
+}

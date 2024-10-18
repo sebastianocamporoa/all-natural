@@ -61,6 +61,13 @@ const Navbar: FC = () => {
             >
               Productos
             </Link>
+            <Link
+              to="/blogs"
+              className="text-xl font-bold hover:cursor-pointer hover:opacity-80"
+              data-test="main-products"
+            >
+              Blog
+            </Link>
             <div
               className="text-black text-[32px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}

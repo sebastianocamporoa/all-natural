@@ -10,6 +10,8 @@ import SingleProduct from "./pages/SingleProduct";
 import AllProducts from "./pages/AllProducts";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import BannerPopup from "./components/BannerPopup";
+import PostsList from "./pages/PostsList";
+import Post from "./pages/Post";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<AllProducts />} />
+        <Route path="/blogs" element={<PostsList />} />
+        <Route path="/blog/:postID" element={<Post />} />
         <Route path="/product/:productID" element={<SingleProduct />} />
       </Routes>
       <Toaster position="bottom-center" reverseOrder={false} />
