@@ -36,7 +36,7 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div className="border border-gray-200 font-lato" data-test="product-card">
+    <div style={{ backgroundColor: "#dfc990" }} className="border border-gray-200 font-theseasons" data-test="product-card">
       <div className="text-center border-b border-gray-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img
@@ -61,9 +61,11 @@ const ProductCard: FC<Product> = ({
         {discountPercentage && (
           <PriceSection discountPercentage={discountPercentage} price={price} />
         )}
+      </div>
+      <div className="flex items-center justify-between px-8 pb-4">
         <button
           type="button"
-          className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
+          className="flex items-center space-x-2 hover:bg-colorGreen2 text-white py-2 px-4 rounded bg-colorGreen"
           onClick={agregarAlCarrito}
           data-test="add-cart-btn"
         >

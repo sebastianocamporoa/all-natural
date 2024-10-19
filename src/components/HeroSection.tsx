@@ -49,7 +49,13 @@ const HeroSection: FC = () => {
         {`
           @media (max-width: 940px) and (min-width: 350px) {
             img {
-              height: 31vh !important;
+              height: 20vh !important;
+            }
+          }
+
+          @media (max-width: 349px) {
+            img {
+              display: none;
             }
           }
         `}
