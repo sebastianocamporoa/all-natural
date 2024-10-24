@@ -36,7 +36,7 @@ const Cart: FC = () => {
     );
 
     //const numeroTelefono = "51947381423";
-    const numeroTelefono = "573012191573";
+    const numeroTelefono = "51949477801";
     const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
 
     window.location.href = urlWhatsApp;

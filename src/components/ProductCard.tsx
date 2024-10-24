@@ -36,7 +36,7 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div style={{ backgroundColor: "#dfc990" }} className="border border-gray-200 font-theseasons" data-test="product-card">
+    <div style={{ backgroundColor: "#DED1BA" }} className="border border-gray-200 font-theseasons rounded-lg" data-test="product-card">
       <div className="text-center border-b border-gray-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img
@@ -65,7 +65,7 @@ const ProductCard: FC<Product> = ({
       <div className="flex items-center justify-between px-8 pb-4">
         <button
           type="button"
-          className="flex items-center space-x-2 hover:bg-colorGreen2 text-white py-2 px-4 rounded bg-colorGreen"
+          className="flex items-center space-x-2 hover:bg-darkBg2 text-darkBg2 hover:text-white font-bold py-2 px-4 rounded border border-darkBg2"
           onClick={agregarAlCarrito}
           data-test="add-cart-btn"
         >
