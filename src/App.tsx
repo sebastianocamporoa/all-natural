@@ -9,7 +9,7 @@ import Cart from "./components/Cart";
 import SingleProduct from "./pages/SingleProduct";
 import AllProducts from "./pages/AllProducts";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import BannerPopup from "./components/BannerPopup";
+// import BannerPopup from "./components/BannerPopup";
 import PostsList from "./pages/PostsList";
 import Post from "./pages/Post";
 import Footer from "./components/Footer/Footer";
@@ -28,7 +28,7 @@ function App() {
       <Toaster position="bottom-center" reverseOrder={false} />
       <Cart />
       <ScrollToTopButton />
-      <BannerPopup />
+      {/* <BannerPopup /> */}
       <Footer />
     </Provider>
   );
