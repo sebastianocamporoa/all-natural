@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import { IoIosArrowUp } from "react-icons/io";
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,13 +21,26 @@ const ScrollToTopButton: React.FC = () => {
     });
   };
 
+  const mensajeCodificado = encodeURIComponent(
+    `🌿 ¡Hola! 🌿
+      Me interesa mucho saber más sobre las piezas y los materiales que utilizan. Además, me llamó la atención la posibilidad de renovar las joyas, ¡qué gran idea! 
+
+      ¿Podrían enviarme más información sobre sus productos y el proceso para hacer pedidos? 🛍
+      ¡Gracias!`);
+
+  const numeroTelefono = "51949477801";
+  const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
+
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
-    <div className="fixed bottom-10 right-8 z-50">
+    <div className="fixed bottom-10 right-8 z-50 flex flex-col">
+      <a href={urlWhatsApp} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faWhatsapp} size="3x" style={{color: 'green'}} />
+      </a>
       {isVisible && (
         <button
           onClick={scrollToTop}

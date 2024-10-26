@@ -84,9 +84,9 @@ const Home: FC = () => {
   };
 
   const heroSlides = [
-    { id: 1, title: "Hero 1", image: "/MINORISTA.jpg" },
-    { id: 2, title: "Hero 2", image: "/MINORISTA.jpg" },
-    { id: 3, title: "Hero 3", image: "/MINORISTA.jpg" },
+    { id: 1, title: "Hero 1", image: "/25.jpg" },
+    { id: 2, title: "Hero 2", image: "/24.jpg" },
+    { id: 3, title: "Hero 3", image: "/21.jpg" },
   ];
 
   return (
