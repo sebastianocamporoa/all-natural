@@ -51,7 +51,7 @@ const Navbar: FC = () => {
             className="text-4xl font-bold dark:text-white"
             data-test="main-logo"
           >
-            {!isDarkMode ? <img src="/logo-dark.png" alt="Logo" className="h-28" /> : <img src="/logo-white.png" alt="Logo" className="h-28" />}
+            {!isDarkMode ? <img src="/logo-dark.svg" alt="Logo" className="h-28" /> : <img src="/logo-dark.svg" alt="Logo" className="h-28" />}
           </Link>
           <div className="flex gap-4 md:gap-8 items-center dark:text-white ">
             <Link
