@@ -40,7 +40,7 @@ const HeroSection: FC = () => {
       {/* Contenido central */}
       <div>
         <h1 className="text-black dark:text-white font-bold text-5xl md:text-6xl">
-          Se natural, sé tú
+          Se natural, se tú
         </h1>
       </div>
 

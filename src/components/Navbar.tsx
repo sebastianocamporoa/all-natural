@@ -42,7 +42,7 @@ const Navbar: FC = () => {
 
 
   return (
-    <div id="navbar" className={`bg-[#f1e8d9] py-4 dark:bg-darkBg top-0 sticky z-10 shadow-lg bg-opacity-70 font-theseasons transition-transform duration-300 ${showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
+    <div id="navbar" className={`bg-[#f1e8d9] dark:bg-darkBg top-0 sticky z-10 shadow-lg bg-opacity-70 font-theseasons transition-transform duration-300 ${showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
       }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
@@ -51,7 +51,7 @@ const Navbar: FC = () => {
             className="text-4xl font-bold dark:text-white"
             data-test="main-logo"
           >
-            {!isDarkMode ? <img src="/logo.png" alt="Logo" className="h-28" /> : <img src="/logo-white.png" alt="Logo" className="h-28" />}
+            {!isDarkMode ? <img src="/logo-dark.png" alt="Logo" className="h-28" /> : <img src="/logo-white.png" alt="Logo" className="h-28" />}
           </Link>
           <div className="flex gap-4 md:gap-8 items-center dark:text-white ">
             <Link
@@ -75,13 +75,13 @@ const Navbar: FC = () => {
             >
               <AiOutlineShoppingCart className="dark:text-white" />
               <div
-                className="absolute top-[-15px] right-[-10px] bg-red-600 w-[25px] h-[25px] rounded-full text-white text-[14px] grid place-items-center"
+                className="absolute top-[-15px] right-[-10px] bg-darkBg2 w-[25px] h-[25px] rounded-full text-white text-[14px] grid place-items-center"
                 data-test="cart-item-count"
               >
                 {cartCount}
               </div>
             </div>
-            <div
+            {/* <div
               onClick={() => {
                 dispatch(updateDarkMode(!isDarkMode));
                 document.body.classList.toggle("dark");
@@ -92,7 +92,7 @@ const Navbar: FC = () => {
               ) : (
                 <MdOutlineDarkMode className="cursor-pointer hover:cursor-pointer hover:opacity-80" size={30} />
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

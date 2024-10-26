@@ -12,6 +12,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import BannerPopup from "./components/BannerPopup";
 import PostsList from "./pages/PostsList";
 import Post from "./pages/Post";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Cart />
       <ScrollToTopButton />
       <BannerPopup />
+      <Footer />
     </Provider>
   );
 }
