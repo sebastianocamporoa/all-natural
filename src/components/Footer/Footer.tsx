@@ -9,7 +9,7 @@ const Footer: FC = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="logo">
-          <img src="public\logo-dark.svg" alt="Logo de la Empresa" />
+          <img src="/logo-dark.svg" alt="Logo de la Empresa" />
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/profile.php?id=61567459979181&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
