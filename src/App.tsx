@@ -1,7 +1,7 @@
 import { Provider } from "react-redux";
 import "./App.css";
 import { store } from "./redux/store";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { Toaster } from "react-hot-toast";

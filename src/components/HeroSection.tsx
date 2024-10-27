@@ -49,7 +49,7 @@ const HeroSection: FC = () => {
         {`
           @media (max-width: 940px) and (min-width: 350px) {
             img {
-              height: 20vh !important;
+              height: 15vh !important;
             }
           }
 
