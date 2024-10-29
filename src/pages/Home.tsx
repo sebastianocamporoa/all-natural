@@ -93,6 +93,7 @@ const Home: FC = () => {
     <>
       <div className="dark:bg-darkBg overflow-x-hidden">
         <HeroSection />
+
         {/* Contenedor para el slider con margen lateral */}
         <div className="px-4 container mx-auto">
           <Slider {...settings}>
@@ -101,12 +102,13 @@ const Home: FC = () => {
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className={`md:h-auto lg:h-[800px] object-contain ${index === currentSlide ? "animate-zoom" : ""}`}
+                  className={`md:h-auto lg:h-[900px] object-contain ${index === currentSlide ? "animate-zoom" : ""}`}
                 />
               </div>
             ))}
           </Slider>
         </div>
+
         <Features />
         <TrendingProducts />
         <Banner />
