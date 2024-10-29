@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+import "./HeroSection.css"
 
 const HeroSection: FC = () => {
   const [navbarHeight, setNavbarHeight] = useState<number>(0);
@@ -19,7 +20,7 @@ const HeroSection: FC = () => {
       <img
         src="/hoja-1.svg"
         alt="Imagen inferior izquierda"
-        className="absolute bottom-0 left-0 object-contain"
+        className="absolute bottom-0 left-0 object-contain hoja"
         style={{
           height: `clamp(15vh, 30vw, 45vh)`,
           width: "auto",
@@ -30,7 +31,7 @@ const HeroSection: FC = () => {
       <img
         src="/hoja-2.svg"
         alt="Imagen superior derecha"
-        className="absolute top-0 right-0 object-contain transform rotate-180"
+        className="absolute top-0 right-0 object-contain transform rotate-180 hoja"
         style={{
           height: `clamp(15vh, 30vw, 45vh)`,
           width: "auto",
@@ -43,23 +44,6 @@ const HeroSection: FC = () => {
           Se natural, se tú
         </h1>
       </div>
-
-      {/* Media queries para evitar que las imágenes se crucen con el texto */}
-      <style>
-        {`
-          @media (max-width: 940px) and (min-width: 350px) {
-            img {
-              height: 15vh !important;
-            }
-          }
-
-          @media (max-width: 349px) {
-            img {
-              display: none;
-            }
-          }
-        `}
-      </style>
     </div>
   );
 };

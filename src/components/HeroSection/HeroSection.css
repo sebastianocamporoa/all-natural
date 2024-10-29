@@ -1,0 +1,11 @@
+@media (max-width: 940px) and (min-width: 350px) {
+    .hoja {
+      height: 15vh !important;
+    }
+  }
+
+  @media (max-width: 349px) {
+    .hoja {
+      display: none;
+    }
+  }

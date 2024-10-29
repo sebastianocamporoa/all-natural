@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection/HeroSection";
 import Features from "../components/Features";
 import TrendingProducts from "../components/TrendingProducts";
 import { useAppDispatch } from "../redux/hooks";
@@ -93,13 +93,20 @@ const Home: FC = () => {
     <>
       <div className="dark:bg-darkBg overflow-x-hidden">
         <HeroSection />
-        <Slider {...settings}>
-          {heroSlides.map((slide, index) => (
-            <div key={slide.id}>
-              <img src={slide.image} alt={slide.title} className={`w-screen object-cover ${index === currentSlide ? 'animate-zoom' : ''}`} />
-            </div>
-          ))}
-        </Slider>
+        {/* Contenedor para el slider con margen lateral */}
+        <div className="px-4 container mx-auto">
+          <Slider {...settings}>
+            {heroSlides.map((slide, index) => (
+              <div key={slide.id}>
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className={`md:h-auto lg:h-[800px] object-contain ${index === currentSlide ? "animate-zoom" : ""}`}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
         <Features />
         <TrendingProducts />
         <Banner />
