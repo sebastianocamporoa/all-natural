@@ -13,25 +13,34 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import PostsList from "./pages/PostsList";
 import Post from "./pages/Post";
 import Footer from "./components/Footer/Footer";
-import Faq from "./pages/Faq";
+import Faq from "./pages/Faq/Faq";
 
 function App() {
   return (
     <Provider store={store}>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<AllProducts />} />
-        <Route path="/blogs" element={<PostsList />} />
-        <Route path="/blog/:postID" element={<Post />} />
-        <Route path="/product/:productID" element={<SingleProduct />} />
-        <Route path="/faq" element={<Faq />} />
-      </Routes>
-      <Toaster position="bottom-center" reverseOrder={false} />
-      <Cart />
-      <ScrollToTopButton />
-      {/* <BannerPopup /> */}
-      <Footer />
+      <div className="app-container">
+        <header>
+          <Navbar />
+        </header>
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<AllProducts />} />
+            <Route path="/blogs" element={<PostsList />} />
+            <Route path="/blog/:postID" element={<Post />} />
+            <Route path="/product/:productID" element={<SingleProduct />} />
+            <Route path="/faq" element={<Faq />} />
+          </Routes>
+          <Toaster position="bottom-center" reverseOrder={false} />
+          <Cart />
+          <ScrollToTopButton />
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </Provider>
   );
 }

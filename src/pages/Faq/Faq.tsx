@@ -21,19 +21,20 @@ function Faq() {
     };
 
     return (
-        <div className='mt-8'>
-            <h1>Preguntas Frecuentes</h1>
+        <div className='m-8 font-theseasons'>
+            <h1 className='text-4xl'>Preguntas Frecuentes</h1>
             <ul>
                 {faqData.map((item, index: number) => (
-                    <li key={index}>
+                    <li key={index} className="my-2">
                         <div
                             onClick={() => handleToggle(index)}
-                            style={{ cursor: 'pointer', margin: '10px 0', padding: '10px', border: '1px solid #ccc' }}
+                            className={`cursor-pointer p-2 border border-darkBg2 rounded-md transition-colors duration-300 
+                                ${expandedIndex === index ? 'bg-[#866c5a] text-white' : 'hover:bg-[#866c5a] hover:text-white'}`}
                         >
-                            <h2><strong>{item.question}</strong></h2>
+                            <h2 className='text-xl font-semibold'>{item.question}</h2>
                         </div>
                         {expandedIndex === index && (
-                            <div style={{ marginLeft: '20px' }}>
+                            <div className="ml-5 mt-2 transition-all duration-300 ease-in-out">
                                 <p>{item.answer}</p>
                             </div>
                         )}

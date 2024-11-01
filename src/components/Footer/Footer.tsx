@@ -6,7 +6,7 @@ import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-
 const Footer: FC = () => {
 
   return (
-    <footer className="footer">
+    <>
       <div className="footer-content">
         <div className="logo">
           <img src="/logo-dark.svg" alt="Logo de la Empresa" />
@@ -24,7 +24,7 @@ const Footer: FC = () => {
         </div>
       </div>
       <p className="footer-text">© 2024 All Natural. Todos los derechos reservados.</p>
-    </footer>
+    </>
   );
 };
 
