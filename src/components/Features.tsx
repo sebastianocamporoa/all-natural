@@ -8,17 +8,17 @@ const data = [
   {
     icon: <TbTruckDelivery className="text-4xl dark:text-white" />,
     title: "Entrega Gratis",
-    desc: "En pedidos de todos los artículos",
+    desc: "En pedidos superiores a S/ 100",
   },
   {
     icon: <RiRefund2Fill className="text-4xl dark:text-white" />,
     title: "Devoluciones y Reembolsos",
-    desc: "Garantía de devolución de dinero",
+    desc: "Por errores en el producto",
   },
   {
     icon: <TbDiscount2 className="text-4xl dark:text-white" />,
-    title: "Descuento para Miembros",
-    desc: "En pedidos superiores a $99",
+    title: "Descuento",
+    desc: "En pedidos superiores a S/ 100",
   },
   {
     icon: <MdSupportAgent className="text-4xl dark:text-white" />,

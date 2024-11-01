@@ -13,6 +13,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import PostsList from "./pages/PostsList";
 import Post from "./pages/Post";
 import Footer from "./components/Footer/Footer";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/blogs" element={<PostsList />} />
         <Route path="/blog/:postID" element={<Post />} />
         <Route path="/product/:productID" element={<SingleProduct />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
       <Toaster position="bottom-center" reverseOrder={false} />
       <Cart />
