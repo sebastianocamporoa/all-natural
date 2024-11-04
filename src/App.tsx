@@ -11,7 +11,7 @@ import AllProducts from "./pages/AllProducts";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 // import BannerPopup from "./components/BannerPopup";
 import PostsList from "./pages/PostsList";
-import Post from "./pages/Post";
+import Post from "./pages/Post/Post";
 import Footer from "./components/Footer/Footer";
 import Faq from "./pages/Faq/Faq";
 import About from "./pages/About/About";

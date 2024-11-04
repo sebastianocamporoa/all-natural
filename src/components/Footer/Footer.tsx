@@ -23,7 +23,7 @@ const Footer: FC = () => {
           </a>
         </div>
       </div>
-      <p className="footer-text">© 2024 All Natural. Todos los derechos reservados.</p>
+      <p className="footer-text font-theseasons">© 2024 All Natural. Todos los derechos reservados.</p>
     </>
   );
 };
