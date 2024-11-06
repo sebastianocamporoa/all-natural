@@ -1,10 +1,12 @@
-// src/pages/PostsList.jsx
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const posts = [
   {
     id: 1,
     title: "Piedras de Murano en tendencia: El Lujo Artesanal en Joyería Sostenible",
+    metaTitle: "Piedras de Murano: Joyería Sostenible de Lujo Artesanal | All Natural",
+    metaDescription: "Descubre las piedras de Murano en la joyería eco-sostenible de All Natural.",
     image: "/foto-1.jpg",
     content: [
       { type: "p", text: "Las piedras de Murano son sinónimo de lujo y tradición. Originarias de la isla de Murano en Italia, estas piezas artesanales son creadas a partir de técnicas ancestrales de soplado y tallado de vidrio, convirtiéndose en elementos esenciales de la joyería de alta gama. En All Natural, hemos integrado estas piedras en nuestras colecciones, fusionando la elegancia de Murano con nuestro compromiso con la eco-sostenibilidad." },
@@ -42,8 +44,6 @@ const posts = [
       {
         type: "p", text: "Las piedras de Murano son mucho más que un material de joyería: son el reflejo de la artesanía sostenible y el lujo . En All Natural, integramos estas magníficas piezas en nuestras colecciones, ofreciéndote joyas que combinan la tradición con el respeto por el medio ambiente."
       },
-
-
     ]
   },
   
@@ -52,6 +52,23 @@ const posts = [
 function Post() {
   const { postID } = useParams();
   const post = posts.find((p) => p.id === parseInt(postID || "", 10));
+
+  useEffect(() => {
+    if (post) {
+      document.title = post.metaTitle;
+      
+      // Actualizar la meta descripción
+      const metaDescription = document.querySelector("meta[name='description']");
+      if (metaDescription) {
+        metaDescription.setAttribute("content", post.metaDescription || "");
+      } else {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = post.metaDescription || "";
+        document.head.appendChild(meta);
+      }
+    }
+  }, [post]);
 
   if (!post) {
     return <h2>Publicación no encontrada</h2>;
