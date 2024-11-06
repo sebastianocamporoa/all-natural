@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     // Inicializa Google Analytics con tu ID de seguimiento
-    ReactGA.initialize('G-WHFF438ER3');
+    ReactGA.initialize('G-QVHNW47LYT');
   }, []);
 
   useEffect(() => {
