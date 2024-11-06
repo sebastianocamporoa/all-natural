@@ -2,7 +2,6 @@ import { SitemapStream, streamToPromise } from 'sitemap';
 import { createWriteStream } from 'fs';
 import { Readable } from 'stream';
 
-// Reemplaza con el dominio de tu aplicación en Netlify
 const hostname = 'https://allnaturaljoyas.com';
 
 // Lista de rutas

@@ -2,7 +2,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 import { store } from "./redux/store";
 import Navbar from "./components/Navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import { Toaster } from "react-hot-toast";
 import Cart from "./components/Cart";
@@ -15,8 +15,22 @@ import Post from "./pages/Post/Post";
 import Footer from "./components/Footer/Footer";
 import Faq from "./pages/Faq/Faq";
 import About from "./pages/About/About";
+import ReactGA from 'react-ga4';
+import { useEffect } from "react";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Inicializa Google Analytics con tu ID de seguimiento
+    ReactGA.initialize('G-WHFF438ER3');
+  }, []);
+
+  useEffect(() => {
+    // Envía un evento de visualización de página cada vez que cambia la ruta
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
+
   return (
     <Provider store={store}>
       <div className="app-container">

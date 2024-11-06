@@ -14,7 +14,8 @@ export default {
         colorbg: '#f1e8d9', //color 3
         darkBg2: '#866c5a', //color 4 café
         colorGreen: '#839969', //verde
-        colorGreen2: '#697A54' //verde hover
+        colorGreen2: '#697A54', //verde hover
+        fondoClaro: '#DED1BA'
       },
     },
   },

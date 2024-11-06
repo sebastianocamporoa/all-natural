@@ -55,14 +55,14 @@ const TodosLosProductos: FC = () => {
   };
 
   return (
-    <div className="container mx-auto min-h-[83vh] p-4 font-theseasons">
+    <div className="container mx-auto min-h-[83vh] p-4 font-theseasons overflow-x-hidden">
       <div className="grid grid-cols-4 gap-1">
         <div className="col-span-4 space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-lg dark:text-white">Productos</span>
+            <h1 className="text-4xl dark:text-white">Productos</h1>
             <select
               ref={sortRef}
-              className="border border-black dark:border-white rounded p-1 dark:text-white dark:bg-slate-600"
+              className="rounded border border-darkBg2 p-2 text-gray-700 text-darkBg2 bg-fondoClaro shadow-sm focus:outline-none focus:ring-2 focus:ring-darkBg2"
               onChange={(e) => ordenarProductos(e.target.value)}
             >
               <option value="default">Por defecto</option>
