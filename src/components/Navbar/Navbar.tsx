@@ -50,7 +50,7 @@ const Navbar: FC = () => {
         {/* Opciones del Menú en pantallas grandes */}
         <div className="hidden md:flex gap-4 items-center">
           <Link to="/products" className="text-xl font-bold hover:opacity-80">Productos</Link>
-          <Link to="/blogs" className="text-xl font-bold hover:opacity-80">Blog</Link>
+          <Link to="/blog" className="text-xl font-bold hover:opacity-80">Blog</Link>
           <Link to="/about" className="text-xl font-bold hover:opacity-80">Nosotros</Link>
           <Link to="/faq" className="text-xl font-bold hover:opacity-80">F.A.Q</Link>
           <div className="text-black text-2xl relative hover:opacity-80" onClick={showCart}>
@@ -65,7 +65,7 @@ const Navbar: FC = () => {
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-[#f1e8d9] flex flex-col items-center md:hidden shadow-lg p-4 space-y-4">
             <Link to="/products" className="text-xl font-bold hover:opacity-80" onClick={() => setIsMenuOpen(false)}>Productos</Link>
-            <Link to="/blogs" className="text-xl font-bold hover:opacity-80" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+            <Link to="/blog" className="text-xl font-bold hover:opacity-80" onClick={() => setIsMenuOpen(false)}>Blog</Link>
             <Link to="/about" className="text-xl font-bold hover:opacity-80" onClick={() => setIsMenuOpen(false)}>Nosotros</Link>
             <Link to="/faq" className="text-xl font-bold hover:opacity-80" onClick={() => setIsMenuOpen(false)}>F.A.Q</Link>
             <div className="text-black text-2xl relative hover:opacity-80" onClick={() => { showCart(); setIsMenuOpen(false); }}>

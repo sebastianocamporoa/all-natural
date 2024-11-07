@@ -8,7 +8,7 @@ const hostname = 'https://allnaturaljoyas.com';
 const links = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
   { url: '/products', changefreq: 'weekly', priority: 0.8 },
-  { url: '/blogs', changefreq: 'weekly', priority: 0.7 },
+  { url: '/blog', changefreq: 'weekly', priority: 0.7 },
   { url: '/blog/:postID', changefreq: 'monthly', priority: 0.6 },
   { url: '/product/:productID', changefreq: 'monthly', priority: 0.6 },
   { url: '/about', changefreq: 'yearly', priority: 0.5 },
