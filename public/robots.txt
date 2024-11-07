@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /producto/xcmg-200-tn-g6/
 Allow: /
 
 Sitemap: https://allnaturaljoyas.com/sitemap.xml
