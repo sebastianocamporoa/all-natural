@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import ProductList from "../components/ProductList";
+import productosData from "../data/products.json"; // Importa tu archivo JSON
 
 const lorem =
   "Es importante cuidar al paciente, ser seguido por el paciente, pero ocurrirá en tal momento que hay mucho trabajo y dolor. Para llegar al menor detalle, nadie debe practicar ningún tipo de trabajo a menos que obtenga algún beneficio de él. No se enfade con el dolor en la reprimenda, en el placer que quiere ser un cabello del dolor con la esperanza de que no hay crianza. A menos que estén cegados por la lujuria, no salen; están en falta los que abandonan sus deberes y ablandan sus corazones, es decir, sus labores.";
@@ -23,50 +24,47 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchProductDetails = () => {
-      fetch(`https://dummyjson.com/products/${productID}`)
-        .then((res) => res.json())
-        .then((data) => {
-          const { thumbnail, images, category } = data;
-          setProduct(data);
-          setImgs(images);
-          setScategory(category);
-          setSelectedImg(thumbnail);
-        });
+      // Encuentra el producto en el JSON por el `id` relacionado con el título
+      const foundProduct = productosData.find(
+        (prod) => prod.id === productID
+      );
+      if (foundProduct) {
+        setProduct(foundProduct);
+        setImgs(foundProduct.images);
+        setScategory(foundProduct.category);
+        setSelectedImg(foundProduct.images ? foundProduct.images[0] : "");
+      }
     };
     fetchProductDetails();
   }, [productID]);
 
   useEffect(() => {
-    const fetchPreferences = (cat: string) => {
-      fetch(`https://dummyjson.com/products/category/${cat}`)
-        .then((res) => res.json())
-        .then((data) => {
-          const _products: Product[] = data.products;
-          const filtered = _products.filter((product) => {
-            if (productID && product.id !== productID) return product;
-          });
-          setSimilar(filtered);
-        });
+    const fetchPreferences = () => {
+      // Filtra productos similares por categoría
+      const similarProducts = productosData.filter(
+        (prod) => prod.category === sCategory && prod.id !== productID
+      );
+      setSimilar(similarProducts);
     };
-    if (sCategory && sCategory !== "") fetchPreferences(sCategory);
+    if (sCategory) fetchPreferences();
   }, [productID, sCategory]);
 
   const addCart = () => {
-      if (product)
-        dispatch(
-          addToCart({
-            id: product.id,
-            price: product.price,
-            title: product.title,
-            category: product.category,
-            rating: product.rating,
-            thumbnail: product.thumbnail,
-            discountPercentage: product.discountPercentage,
-          })
-        );
-      toast.success("Artículo añadido al carrito con éxito", {
-        duration: 3000,
-      });
+    if (product)
+      dispatch(
+        addToCart({
+          id: product.id,
+          price: product.price,
+          title: product.title,
+          category: product.category,
+          rating: product.rating,
+          thumbnail: product.images ? product.images[0] : "",
+          discountPercentage: product.discountPercentage,
+        })
+      );
+    toast.success("Artículo añadido al carrito con éxito", {
+      duration: 3000,
+    });
   };
 
   const buyNow = () => {
@@ -78,7 +76,7 @@ const SingleProduct: FC = () => {
           title: product.title,
           category: product.category,
           rating: product.rating,
-          thumbnail: product.thumbnail,
+          thumbnail: product.images ? product.images[0] : "",
           discountPercentage: product.discountPercentage,
         })
       );
@@ -109,8 +107,8 @@ const SingleProduct: FC = () => {
           <div className="mt-1">
             {product?.discountPercentage && (
               <PriceSection
-                discountPercentage={product?.discountPercentage}
-                price={product?.price}
+                discountPercentage={product.discountPercentage}
+                price={product.price}
               />
             )}
           </div>

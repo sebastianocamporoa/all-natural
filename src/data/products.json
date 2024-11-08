@@ -7,7 +7,13 @@
         "images": [
             "/productos/aura-de-luna/aura-de-luna.jpg",
             "/productos/aura-de-luna/aura-de-luna2.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "reflejo-de-mar",
@@ -16,7 +22,13 @@
         "description": "Pulseras o sujetador de cabello de murano",
         "images": [
             "/productos/reflejo-de-mar/reflejo-de-mar.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "tierra-viva",
@@ -25,7 +37,13 @@
         "description": "Piedra volcánica",
         "images": [
             "/productos/tierra-viva/tierra-viva.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "ecobrillo",
@@ -34,7 +52,13 @@
         "description": "Pulseras de murano con hilo regulable",
         "images": [
             "/productos/ecobrillo/ecobrillo.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "alma-salvaje",
@@ -43,7 +67,13 @@
         "description": "Lágrimas de murano",
         "images": [
             "/productos/alma-salvaje/alma-salvaje.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "hilo-eterno",
@@ -53,7 +83,13 @@
         "images": [
             "/productos/hilo-eterno/hilo-eterno.jpg",
             "/productos/hilo-eterno/hilo-eterno2.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "hilo-eterno2",
@@ -62,7 +98,13 @@
         "description": "Pulsera de murano y con dije a elección.",
         "images": [
             "/productos/hilo-eterno/hilo-eterno2.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     },
     {
         "id": "encanto-del-bosque",
@@ -71,6 +113,12 @@
         "description": "Pulsera ojo de tigre.",
         "images": [
             "/productos/encanto-del-bosque/encanto-del-bosque.jpg"
-        ]
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     }
 ]
