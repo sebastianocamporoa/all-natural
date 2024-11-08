@@ -10,7 +10,6 @@ const Cart: FC = () => {
   const isOpen = useAppSelector((state) => state.cartReducer.cartOpen);
   const items = useAppSelector((state) => state.cartReducer.cartItems);
   const [checkout, setCheckout] = useState(false);
-  console.log(items)
 
   const calcularTotal = () => {
     let total = 0;

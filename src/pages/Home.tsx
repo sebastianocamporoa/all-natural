@@ -1,49 +1,17 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Features from "../components/Features";
 import TrendingProducts from "../components/TrendingProducts";
-import { useAppDispatch } from "../redux/hooks";
-import {
-  updateNewList,
-  updateFeaturedList,
-} from "../redux/features/productSlice";
-import { Product } from "../models/Product";
 import LatestProducts from "../components/LatestProducts";
 import Banner from "../components/Banner";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const Home: FC = () => {
-  const dispatch = useAppDispatch();
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const fetchProducts = () => {
-      fetch("https://dummyjson.com/products?limit=24")
-        .then((res) => res.json())
-        .then(({ products }) => {
-          const productList: Product[] = [];
-          products.forEach((product: Product) => {
-            productList.push({
-              id: product.id,
-              title: product.title,
-              images: product.images,
-              price: product.price,
-              rating: product.rating,
-              thumbnail: product.thumbnail,
-              description: product.description,
-              category: product.category,
-              discountPercentage: product.discountPercentage,
-            });
-          });
-          dispatch(updateFeaturedList(productList.slice(0, 8)));
-          dispatch(updateNewList(productList.slice(8, 16)));
-        });
-    };
-    fetchProducts();
-  }, [dispatch]);
 
   // Flecha personalizada para ir a la diapositiva anterior
   const PrevArrow = ({ onClick }: { onClick?: () => void }) => {
@@ -91,6 +59,13 @@ const Home: FC = () => {
 
   return (
     <>
+      <Helmet>
+        <meta name="keywords" content="joyería sostenible, piedras de Murano, joyería artesanal, lujo ecológico, tendencias en joyería, productos naturales, pulseras de moda, anillos sostenibles, collares ecológicos, All Natural" />
+        <meta name="author" content="All Natural" />
+        <meta name="publisher" content="All Natural" />
+        <link rel="canonical" href="https://allnaturaljoyas.com" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="dark:bg-darkBg overflow-x-hidden">
         <HeroSection />
 

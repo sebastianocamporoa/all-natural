@@ -21,6 +21,7 @@ const ProductList: FC<{ title: string; products: Product[] }> = ({
           key={product.id}
           id={product.id}
           category={product.category}
+          images={product.images}
           title={product.title}
           price={product.price}
           thumbnail={product.thumbnail}

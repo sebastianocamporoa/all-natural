@@ -8,10 +8,7 @@ import toast from "react-hot-toast";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import ProductList from "../components/ProductList";
-import productosData from "../data/products.json"; // Importa tu archivo JSON
-
-const lorem =
-  "Es importante cuidar al paciente, ser seguido por el paciente, pero ocurrirá en tal momento que hay mucho trabajo y dolor. Para llegar al menor detalle, nadie debe practicar ningún tipo de trabajo a menos que obtenga algún beneficio de él. No se enfade con el dolor en la reprimenda, en el placer que quiere ser un cabello del dolor con la esperanza de que no hay crianza. A menos que estén cegados por la lujuria, no salen; están en falta los que abandonan sus deberes y ablandan sus corazones, es decir, sus labores.";
+import productosData from "../data/products.json";
 
 const SingleProduct: FC = () => {
   const dispatch = useAppDispatch();
@@ -131,7 +128,7 @@ const SingleProduct: FC = () => {
           <div className="mt-2">
             <h2 className="font-bold">Sobre el producto</h2>
             <p className="leading-5">
-              {product?.description} {lorem}
+              {product?.description}
             </p>
           </div>
           <div className="flex flex-wrap items-center mt-4 mb-2 space-x-2">

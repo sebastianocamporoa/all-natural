@@ -1,10 +1,10 @@
-import { useAppSelector } from "../redux/hooks";
+import { FC } from "react";
 import ProductList from "./ProductList";
+import productosData from "../data/products.json";
 
-const LatestProducts = () => {
-  const newProducts = useAppSelector(
-    (state) => state.productReducer.newProducts
-  );
+const LatestProducts: FC = () => {
+  // Obtiene los últimos 8 productos del JSON
+  const newProducts = productosData.slice(-8);
 
   return <ProductList title="Agregados recientemente" products={newProducts} />;
 };
