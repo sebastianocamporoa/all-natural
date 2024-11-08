@@ -1,0 +1,76 @@
+[
+    {
+        "id": "aura-de-luna",
+        "title": "Aura de luna",
+        "price": 70,
+        "description": "Pulsera de lágrima de murano con dije bolita de murano",
+        "images": [
+            "/productos/aura-de-luna/aura-de-luna.jpg",
+            "/productos/aura-de-luna/aura-de-luna2.jpg"
+        ]
+    },
+    {
+        "id": "reflejo-de-mar",
+        "title": "Reflejo de mar",
+        "price": 70,
+        "description": "Pulseras o sujetador de cabello de murano",
+        "images": [
+            "/productos/reflejo-de-mar/reflejo-de-mar.jpg"
+        ]
+    },
+    {
+        "id": "tierra-viva",
+        "title": "Tierra Viva",
+        "price": 130,
+        "description": "Piedra volcánica",
+        "images": [
+            "/productos/tierra-viva/tierra-viva.jpg"
+        ]
+    },
+    {
+        "id": "ecobrillo",
+        "title": "Ecobrillo",
+        "price": 50,
+        "description": "Pulseras de murano con hilo regulable",
+        "images": [
+            "/productos/ecobrillo/ecobrillo.jpg"
+        ]
+    },
+    {
+        "id": "alma-salvaje",
+        "title": "Alma salvaje",
+        "price": 65,
+        "description": "Lágrimas de murano",
+        "images": [
+            "/productos/alma-salvaje/alma-salvaje.jpg"
+        ]
+    },
+    {
+        "id": "hilo-eterno",
+        "title": "Hilo eterno",
+        "price": 65,
+        "description": "Pulsera de murano y con dije a elección.",
+        "images": [
+            "/productos/hilo-eterno/hilo-eterno.jpg",
+            "/productos/hilo-eterno/hilo-eterno2.jpg"
+        ]
+    },
+    {
+        "id": "hilo-eterno2",
+        "title": "Hilo eterno",
+        "price": 65,
+        "description": "Pulsera de murano y con dije a elección.",
+        "images": [
+            "/productos/hilo-eterno/hilo-eterno2.jpg"
+        ]
+    },
+    {
+        "id": "encanto-del-bosque",
+        "title": "Encanto del bosque",
+        "price": 70,
+        "description": "Pulsera ojo de tigre.",
+        "images": [
+            "/productos/encanto-del-bosque/encanto-del-bosque.jpg"
+        ]
+    }
+]

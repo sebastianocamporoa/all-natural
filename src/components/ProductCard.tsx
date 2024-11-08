@@ -10,7 +10,7 @@ import PriceSection from "./PriceSection";
 const ProductCard: FC<Product> = ({
   id,
   price,
-  thumbnail,
+  images,
   title,
   category,
   rating,
@@ -26,7 +26,7 @@ const ProductCard: FC<Product> = ({
         title,
         category,
         rating,
-        thumbnail,
+        thumbnail: images ? images[0] : "", // Usa la primera imagen de `images` o un valor vacío
         discountPercentage,
       })
     );
@@ -36,30 +36,38 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div style={{ backgroundColor: "#DED1BA" }} className="border border-gray-200 font-theseasons rounded-lg" data-test="product-card">
+    <div
+      style={{ backgroundColor: "#DED1BA" }}
+      className="border border-gray-200 font-theseasons rounded-lg"
+      data-test="product-card"
+    >
       <div className="text-center border-b border-gray-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img
-            src={thumbnail}
+            src={images && images.length > 0 ? images[0] : "/default.jpg"} // Usa imagen predeterminada si no hay imágenes
             alt={title}
-            className="inline-block h-60 transition-transform duration-200 hover:scale-110"
+            className="inline-block h-60 rounded-lg transition-transform duration-200 hover:scale-110"
           />
         </Link>
       </div>
       <div className="px-8 pt-4">
-        <p className="text-gray-500 text-[14px] font-medium dark:text-white">
-          {category}
-        </p>
+        {category && (
+          <p className="text-gray-500 text-[14px] font-medium dark:text-white">
+            {category}
+          </p>
+        )}
         <Link
-          className="font-semibold hover:underline dark:text-white"
+          className="font-semibold hover:underline dark:text-white text-2xl"
           to={{ pathname: `/product/${id}` }}
         >
           {title}
         </Link>
       </div>
       <div className="flex items-center justify-between px-8 pb-4">
-        {discountPercentage && (
+        {discountPercentage ? (
           <PriceSection discountPercentage={discountPercentage} price={price} />
+        ) : (
+          <span className="text-lg font-bold">c/u {price} soles</span>
         )}
       </div>
       <div className="flex items-center justify-between px-8 pb-4">

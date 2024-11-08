@@ -22,11 +22,7 @@ const ScrollToTopButton: React.FC = () => {
   };
 
   const mensajeCodificado = encodeURIComponent(
-    `🌿 ¡Hola! 🌿
-      Me interesa mucho saber más sobre las piezas y los materiales que utilizan. Además, me llamó la atención la posibilidad de renovar las joyas, ¡qué gran idea! 
-
-      ¿Podrían enviarme más información sobre sus productos y el proceso para hacer pedidos? 🛍
-      ¡Gracias!`);
+    `Hola 😊, estoy interesado/a en la compra de sus joyas. ¿Podrían confirmarme si el producto que elegí está disponible? También me gustaría saber cómo es el proceso de compra y envío 📦. ¿Tendrían alguna recomendación para ayudarme a elegir entre las piezas? ¡Gracias!`);
 
   const numeroTelefono = "51949477801";
   const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
@@ -39,7 +35,7 @@ const ScrollToTopButton: React.FC = () => {
   return (
     <div className="fixed bottom-10 right-8 z-50 flex flex-col">
       <a href={urlWhatsApp} target="_blank" rel="noopener noreferrer" className="pb-2">
-        <FontAwesomeIcon icon={faWhatsapp} size="3x" style={{color: 'green'}} />
+        <FontAwesomeIcon icon={faWhatsapp} size="3x" style={{ color: 'green' }} />
       </a>
       {isVisible && (
         <button

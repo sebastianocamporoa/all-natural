@@ -3,6 +3,7 @@ import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { addProducts } from "../redux/features/productSlice";
 import ProductCard from "../components/ProductCard";
 import { Product } from "../models/Product";
+import productosData from "../data/products.json"; // Importa tu archivo JSON
 
 const TodosLosProductos: FC = () => {
   const dispatch = useAppDispatch();
@@ -14,11 +15,7 @@ const TodosLosProductos: FC = () => {
 
   useEffect(() => {
     const obtenerProductos = () => {
-      fetch("https://dummyjson.com/products?limit=500")
-        .then((res) => res.json())
-        .then(({ products }) => {
-          dispatch(addProducts(products));
-        });
+      dispatch(addProducts(productosData));
     };
 
     if (todosLosProductos.length === 0) obtenerProductos();
@@ -31,26 +28,14 @@ const TodosLosProductos: FC = () => {
   const ordenarProductos = (valorOrden: string) => {
     if (valorOrden === "asc") {
       setProductosActuales(
-        [...productosActuales].sort((a, b) => {
-          const precioA =
-            a.price - (a.price * (a.discountPercentage ?? 0)) / 100;
-          const precioB =
-            b.price - (b.price * (b.discountPercentage ?? 0)) / 100;
-          return precioA - precioB;
-        })
+        [...productosActuales].sort((a, b) => a.price - b.price)
       );
     } else if (valorOrden === "desc") {
       setProductosActuales(
-        [...productosActuales].sort((a, b) => {
-          const precioA =
-            a.price - (a.price * (a.discountPercentage ?? 0)) / 100;
-          const precioB =
-            b.price - (b.price * (b.discountPercentage ?? 0)) / 100;
-          return precioB - precioA;
-        })
+        [...productosActuales].sort((a, b) => b.price - a.price)
       );
     } else {
-      setProductosActuales([...productosActuales].sort((a, b) => a.id - b.id));
+      setProductosActuales([...productosActuales].sort((a, b) => a.id.localeCompare(b.id)));
     }
   };
 

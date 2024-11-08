@@ -30,7 +30,7 @@ function PostsList() {
   return (
     <>
       <Helmet>
-        <title>Blog - All Natural</title>
+        <title>Blog de All Natural: Joyería Sostenible y Cuidado de Productos</title>
         <meta name="description" content="Descubre las últimas tendencias en joyería sostenible y cuidado de productos naturales en el blog de All Natural." />
         <meta name="keywords" content={combinedKeywords} />
         <meta name="author" content="All Natural" />
