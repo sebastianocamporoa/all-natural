@@ -16,11 +16,11 @@ const posts = [
     keywords: "pulseras, all natural, cuidado de joyas"
   },
   {
-    id: "3",
-    title: "Tercera publicación",
-    excerpt: "Esta es una breve descripción de la tercera publicación.",
+    id: "recoleccion-materiales-naturales-pulseras-all-natural",
+    title: "La Recolección de Materiales Naturales para la Elaboración de Pulseras All Natural",
+    excerpt: "Explora cómo se recolectan materiales naturales para crear pulseras sostenibles y únicas en All Natural. Conoce los procesos artesanales y el compromiso ecológico que convierte cada pieza en una joya especial.",
     imgSrc: "/foto-blog-3.jpg",
-    keywords: "publicación, joyería, tendencias"
+    keywords: "recolección de materiales naturales, pulseras All Natural, pulseras sostenibles, materiales naturales para pulseras, elaboración de pulseras, pulseras ecológicas, joyería artesanal, pulseras hechas a mano, pulseras amigables con el medio ambiente, pulseras de materiales naturales"
   },
 ];
 

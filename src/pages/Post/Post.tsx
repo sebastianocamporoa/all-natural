@@ -111,6 +111,119 @@ const posts = [
       },
     ]
   },
+  {
+    id: "recoleccion-materiales-naturales-pulseras-all-natural",
+    title: "La Recolección de Materiales Naturales para la Elaboración de Pulseras All Natural",
+    metaTitle: "Piedras de Murano: Joyería Sostenible de Lujo Artesanal | All Natural",
+    metaDescription: "Descubre cómo se realiza la recolección de materiales naturales para crear pulseras sostenibles y únicas en All Natural. Explora los procesos y el respeto por el medio ambiente detrás de cada pieza.",
+    keywords: "recolección de materiales naturales, pulseras All Natural, pulseras sostenibles, materiales naturales para pulseras, elaboración de pulseras, pulseras ecológicas, joyería artesanal, pulseras hechas a mano, pulseras amigables con el medio ambiente, pulseras de materiales naturales",
+    author: "Nicolle Morales Sandhaus",
+    publisher: "All Natural",
+    image: "/foto-blog-2.jpg",
+    content: [
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "En " },
+          { bold: true, content: "All Natural" },
+          { bold: false, content: ", cada pulsera que creamos cuenta una historia única. Esta historia comienza con la recolección de materiales naturales, un proceso que no solo destaca por su belleza, sino también por su compromiso con la sostenibilidad y el respeto al medio ambiente. Las piedras de pepas de madera, las perlas de río, el vidrio Murano y otros elementos orgánicos no solo son hermosos, sino que también representan una conexión profunda con la naturaleza. A continuación, te contamos todo sobre cómo recolectamos estos materiales y por qué cada pulsera de " },
+          { bold: true, content: "All Natural" },
+          { bold: false, content: " es un símbolo de responsabilidad ecológica." },
+        ],
+      },
+      { type: "h2", text: "1. La Selección de Materiales Sostenibles" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Uno de los pilares fundamentales de " },
+          { bold: true, content: "All Natural, " },
+          { bold: false, content: "es el respeto por el medio ambiente. La recolección de materiales para nuestras pulseras se realiza de manera ética y sostenible. Trabajamos exclusivamente con proveedores que adoptan prácticas responsables para asegurarse de que los recursos naturales sean cosechados de forma que no agoten las fuentes de donde provienen." },
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { bold: true, content: "Piedras de pepas de madera: " },
+            { bold: false, content: "Este material proviene de semillas y frutos caídos naturalmente de árboles, lo que significa que no es necesario talar ni dañar a los árboles. Recogemos solo los frutos que ya han caído al suelo, garantizando así que el ecosistema no se vea afectado." }
+          ],
+          [
+            { bold: true, content: "Perlas de río: " },
+            { bold: false, content: "Las perlas que usamos en nuestras pulseras son obtenidas de forma artesanal, sin afectar la biodiversidad de los ríos. Los métodos de recolección son respetuosos con los ecosistemas acuáticos, asegurando la conservación de los hábitats naturales." },
+          ],
+          [
+            { bold: true, content: "Vidrio Murano: " },
+            { bold: false, content: "Para el vidrio Murano, trabajamos con artesanos tradicionales que reciclan vidrio de forma sostenible, reduciendo al mínimo el impacto ambiental. Además, el uso de vidrio reciclado ayuda a reducir la cantidad de residuos y fomenta la reutilización de materiales." }
+          ]
+        ]
+      },
+      { type: "h2", text: "2. La Recolección Responsable de Maderas y Semillas" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "La madera y las semillas utilizadas en nuestras pulseras provienen de fuentes responsables y de comercio justo. En " },
+          { bold: true, content: "All Natural" },
+          { bold: false, content: ", estamos comprometidos con el desarrollo de prácticas que no solo protejan los recursos naturales, sino que también apoyen a las comunidades locales. Al recolectar estos materiales, trabajamos de la mano con los habitantes de las regiones productoras para promover la economía local y garantizar que los procesos de recolección se realicen de manera controlada y en armonía con la naturaleza." },
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "La recolección de pepas de madera es especialmente cuidadosa, ya que no implica la deforestación ni la alteración de los ecosistemas. En lugar de cortar árboles, nos enfocamos en obtener semillas de los frutos que ya han caído al suelo, lo que permite que los árboles continúen su ciclo de vida sin ser dañados." }
+        ],
+      },
+      { type: "h2", text: "3. El Arte de la Recolección de Perlas de Río" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Las " },
+          { bold: true, content: "perlas de río " },
+          { bold: false, content: "que usamos en nuestras pulseras son cultivadas de forma artesanal en pequeñas granjas que siguen estrictos protocolos medioambientales. A diferencia de las perlas marinas, que pueden tener un impacto ambiental negativo, las perlas de río se cultivan en aguas dulces y se extraen sin alterar el equilibrio de los ecosistemas acuáticos. La recolección es un proceso delicado que requiere paciencia y un profundo conocimiento de la naturaleza, garantizando que las perlas se obtengan de manera ética y sostenible." },
+        ],
+      },
+      { type: "h2", text: "4. El Proceso de Fabricación: Un Encuentro entre la Naturaleza y el Diseño" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Una vez recolectados los materiales naturales, nuestro equipo de diseñadores y artesanos transforma estos elementos en las pulseras " },
+          { bold: true, content: "All Natural" },
+          { bold: false, content: ". La fabricación de cada pieza es un proceso completamente manual, donde el arte y la naturaleza se combinan para crear joyas únicas y llenas de significado." },
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Además, la elaboración de nuestras pulseras sigue principios de comercio justo y bienestar social, lo que significa que cada persona que participa en el proceso de creación es tratada con respeto y recibe una compensación justa por su trabajo." }
+        ],
+      },
+      { type: "h2", text: "5. El Compromiso de All Natural con la Sostenibilidad" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Más allá de la recolección, en " },
+          { bold: true, content: "All Natural" },
+          { bold: false, content: " estamos comprometidos con una filosofía de sostenibilidad integral. Esto no solo se refleja en los materiales que usamos, sino también en los procesos de producción y en la distribución de nuestras pulseras. Reducir el impacto ambiental, promover el comercio ético y ofrecer productos que perduren en el tiempo son solo algunos de los valores que definen nuestra marca." },
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          { bold: true, content: "All Natural " },
+          { bold: false, content: "no es solo una marca de joyería, es una celebración de la naturaleza. Al elegir nuestras pulseras, estás eligiendo apoyar un modelo de negocio que trabaja por un futuro más verde y responsable." },
+        ],
+      },
+      { type: "h2", text: "¡Descubre nuestras pulseras y forma parte de un movimiento que celebra la naturaleza!" },
+      {
+        type: "p",
+        text: [
+          { bold: false, content: "Visita nuestra" },
+          { bold: true, content: " tienda online " },
+          { bold: false, content: "para explorar la colección completa de pulseras hechas con materiales naturales. Si tienes preguntas sobre el proceso de recolección o deseas más información sobre la sostenibilidad de nuestros productos, no dudes en " },
+          { bold: true, content: "contactarnos." },
+        ],
+      },
+    ]
+  },
 ];
 
 function Post() {
