@@ -12,14 +12,14 @@ const posts = [
     id: "como-cuidar-pulseras-all-natural",
     title: "Cómo Cuidar las Pulseras de All Natural: Guía para Mantener su Belleza Natural",
     excerpt: "Aprende a cuidar tus pulseras de materiales naturales de All Natural. Sigue estos consejos para preservar su belleza y durabilidad, incluyendo limpieza, almacenamiento y protección.",
-    imgSrc: "/foto-1.jpg",
+    imgSrc: "/foto-blog-2.jpg",
     keywords: "pulseras, all natural, cuidado de joyas"
   },
   {
     id: "3",
     title: "Tercera publicación",
     excerpt: "Esta es una breve descripción de la tercera publicación.",
-    imgSrc: "/foto-1.jpg",
+    imgSrc: "/foto-blog-3.jpg",
     keywords: "publicación, joyería, tendencias"
   },
 ];
@@ -71,7 +71,7 @@ function PostsList() {
                   <img src={post.imgSrc} alt={post.title} className="w-full rounded-md" />
                   <h3 className="text-xl font-semibold border-b pb-2">{post.title}</h3>
                   <p className="mb-8">{post.excerpt}</p>
-                  <a href={`/blog/${posts[0].id}`} className="inline-block hover:bg-darkBg2 text-darkBg2 text-center hover:text-white font-bold py-2 px-4 rounded border border-darkBg2">
+                  <a href={`/blog/${post.id}`} className="inline-block hover:bg-darkBg2 text-darkBg2 text-center hover:text-white font-bold py-2 px-4 rounded border border-darkBg2">
                     Leer más
                   </a>
                 </article>

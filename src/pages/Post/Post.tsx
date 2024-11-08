@@ -57,7 +57,7 @@ const posts = [
     keywords: "cuidado de pulseras, All Natural, belleza natural, joyería sostenible",
     author: "Nicolle Morales Sandhaus",
     publisher: "All Natural",
-    image: "/foto-1.jpg",
+    image: "/foto-blog-2.jpg",
     content: [
       {
         type: "p",

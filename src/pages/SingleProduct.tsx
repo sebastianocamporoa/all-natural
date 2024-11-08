@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { useAppDispatch } from "../redux/hooks";
 import { addToCart, setCartState } from "../redux/features/cartSlice";
 import { Product } from "../models/Product";
-import PriceSection from "../components/PriceSection";
 import toast from "react-hot-toast";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import ProductList from "../components/ProductList";
 import productosData from "../data/products.json";
+import { Helmet } from "react-helmet";
 
 const SingleProduct: FC = () => {
   const dispatch = useAppDispatch();
@@ -78,65 +78,74 @@ const SingleProduct: FC = () => {
   };
 
   return (
-    <div className="container mx-auto pt-8 dark:text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-4 font-theseasons">
-        <div className="space-y-2">
-          <img src={selectedImg} alt="seleccionada" className="h-80" />
-          <div className="flex space-x-1 items-center">
-            {imgs &&
-              imgs.map((_img) => (
-                <img
-                  src={_img}
-                  key={_img}
-                  alt="miniatura"
-                  className={`w-12 cursor-pointer hover:border-2 hover:border-black ${_img === selectedImg ? "border-2 border-black" : ""
-                    }`}
-                  onClick={() => setSelectedImg(_img)}
-                />
-              ))}
+    <>
+      <Helmet>
+        <meta name="keywords" content="joyería sostenible, piedras de Murano, joyería artesanal, lujo ecológico, tendencias en joyería, productos naturales, pulseras de moda, anillos sostenibles, collares ecológicos, All Natural" />
+        <meta name="author" content="All Natural" />
+        <meta name="publisher" content="All Natural" />
+        <link rel="canonical" href="https://allnaturaljoyas.com" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <div className="container mx-auto pt-8 dark:text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-4 font-theseasons">
+          <div className="space-y-2">
+            <img src={selectedImg} alt="seleccionada" className="h-80" />
+            <div className="flex space-x-1 items-center">
+              {imgs &&
+                imgs.map((_img) => (
+                  <img
+                    src={_img}
+                    key={_img}
+                    alt="miniatura"
+                    className={`w-12 cursor-pointer hover:border-2 hover:border-black ${_img === selectedImg ? "border-2 border-black" : ""
+                      }`}
+                    onClick={() => setSelectedImg(_img)}
+                  />
+                ))}
+            </div>
           </div>
-        </div>
-        <div className="px-2">
-          <h1 className="text-4xl font-bold mb-4">{product?.title}</h1>
-          <div className="mt-1 text-base">
-          c/u {product?.price} soles
-            {/* {product?.discountPercentage && (
+          <div className="px-2">
+            <h1 className="text-4xl font-bold mb-4">{product?.title}</h1>
+            <div className="mt-1 text-lg">
+              c/u {product?.price} soles
+              {/* {product?.discountPercentage && (
               <PriceSection
                 discountPercentage={product.discountPercentage}
                 price={product.price}
               />
             )} */}
-          </div>
-          <div className="mt-2">
-            <h2 className="font-bold text-lg">Sobre el producto</h2>
-            <p className="leading-5">
-              {product?.description}
-            </p>
-          </div>
-          <div className="flex flex-wrap items-center mt-4 mb-2 space-x-2">
-            <button
-              type="button"
-              className="flex items-center space-x-2 hover:bg-darkBg2 text-darkBg2 hover:text-white font-bold py-2 px-4 rounded border border-darkBg2 mb-2"
-              onClick={addCart}
-            >
-              <AiOutlineShoppingCart />
-              <span>AÑADIR AL CARRITO</span>
-            </button>
-            <button
-              type="button"
-              className="flex items-center space-x-2 hover:bg-darkBg2 text-darkBg2 hover:text-white font-bold py-2 px-4 rounded border border-darkBg2 mb-2"
-              onClick={buyNow}
-            >
-              <FaHandHoldingDollar />
-              <span>COMPRAR AHORA</span>
-            </button>
+            </div>
+            <div className="mt-2">
+              <h2 className="font-bold text-lg">Sobre el producto</h2>
+              <p className="leading-5 text-lg">
+                {product?.description}
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center mt-4 mb-2 space-x-2">
+              <button
+                type="button"
+                className="flex items-center space-x-2 hover:bg-darkBg2 text-darkBg2 hover:text-white font-bold py-2 px-4 rounded border border-darkBg2 mb-2"
+                onClick={addCart}
+              >
+                <AiOutlineShoppingCart />
+                <span>AÑADIR AL CARRITO</span>
+              </button>
+              <button
+                type="button"
+                className="flex items-center space-x-2 hover:bg-darkBg2 text-darkBg2 hover:text-white font-bold py-2 px-4 rounded border border-darkBg2 mb-2"
+                onClick={buyNow}
+              >
+                <FaHandHoldingDollar />
+                <span>COMPRAR AHORA</span>
+              </button>
+            </div>
           </div>
         </div>
+        <hr className="mt-4" />
+        <ProductList title="Productos similares" products={similar} />
+        <br />
       </div>
-      <hr className="mt-4" />
-      <ProductList title="Productos similares" products={similar} />
-      <br />
-    </div>
+    </>
   );
 };
 
