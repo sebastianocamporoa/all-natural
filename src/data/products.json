@@ -120,5 +120,156 @@
         "brand": "",
         "stock": 0,
         "discountPercentage": 0
+    },
+    {
+        "id": "tierra-viva-verde",
+        "title": "Tierra viva en verde",
+        "price": 70,
+        "description": "Pulsera con piedra volcánica.",
+        "images": [
+            "/productos/tierra-viva/tierra-viva2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "mistica-tierra",
+        "title": "Mística Tierra",
+        "price": 70,
+        "description": "Pulsera Agatha con dije a elección.",
+        "images": [
+            "/productos/mistica-tierra/mistica-tierra.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "tierra-viva-fucsia",
+        "title": "Tierra Viva en fucsia",
+        "price": 70,
+        "description": "Pulsera de piedra volcánica.",
+        "images": [
+            "/productos/tierra-viva/tierra-viva4.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "brisa-pura",
+        "title": "Brisa Pura",
+        "price": 60,
+        "description": "Pulsera de lágrimas de murano.",
+        "images": [
+            "/productos/brisa-pura/brisa-pura.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "luz-de-luna",
+        "title": "Luz de luna",
+        "price": 65,
+        "description": "Pulsera de lágrimas de murano.",
+        "images": [
+            "/productos/luz-de-luna/luz-de-luna.jpg",
+            "/productos/luz-de-luna/luz-de-luna2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "destellos-de-mar",
+        "title": "Destellos de mar",
+        "price": 65,
+        "description": "Pulsera de murano con piedra de rio.",
+        "images": [
+            "/productos/destellos-de-mar/destellos-de-mar.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "mistica-tierra2",
+        "title": "Mística Tierra",
+        "price": 70,
+        "description": " Pulsera Agatha.",
+        "images": [
+            "/productos/mistica-tierra/mistica-tierra2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "reflejo-de-mar2",
+        "title": "Reflejo de mar",
+        "price": 70,
+        "description": "Pulseras o sujetador de cabello de murano",
+        "images": [
+            "/productos/reflejo-de-mar/reflejo-de-mar2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "escencia-verde",
+        "title": "Escencia verde",
+        "price": 65,
+        "description": "Pulsera lágrima de murano con piedra de rio.",
+        "images": [
+            "/productos/escencia-verde/escencia-verde.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "alma-de-arena",
+        "title": "Alma de arena",
+        "price": 65,
+        "description": "Pulsera de murano con dije a elección.",
+        "images": [
+            "/productos/alma-de-arena/alma-de-arena.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     }
 ]
