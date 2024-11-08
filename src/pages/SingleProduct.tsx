@@ -43,7 +43,7 @@ const SingleProduct: FC = () => {
         .then((data) => {
           const _products: Product[] = data.products;
           const filtered = _products.filter((product) => {
-            if (productID && product.id !== parseInt(productID)) return product;
+            if (productID && product.id !== productID) return product;
           });
           setSimilar(filtered);
         });
