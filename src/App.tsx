@@ -2,7 +2,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 import { store } from "./redux/store";
 import Navbar from "./components/Navbar/Navbar";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import { Toaster } from "react-hot-toast";
 import Cart from "./components/Cart";
@@ -47,6 +47,7 @@ function App() {
             <Route path="/product/:productID" element={<SingleProduct />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Toaster position="bottom-center" reverseOrder={false} />
           <Cart />
