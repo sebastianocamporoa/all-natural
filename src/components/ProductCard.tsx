@@ -38,7 +38,7 @@ const ProductCard: FC<Product> = ({
   return (
     <div
       style={{ backgroundColor: "#DED1BA" }}
-      className="border border-gray-200 font-theseasons rounded-lg"
+      className="border border-gray-200 font-theseasons rounded-lg max-w-xs mx-auto"
       data-test="product-card"
     >
       <div className="text-center border-b border-gray-200">
@@ -46,7 +46,7 @@ const ProductCard: FC<Product> = ({
           <img
             src={images && images.length > 0 ? images[0] : "/default.jpg"} // Usa imagen predeterminada si no hay imágenes
             alt={title}
-            className="inline-block h-60 rounded-lg transition-transform duration-200 hover:scale-110"
+            className="w-full h-60 object-cover rounded-lg transition-transform duration-200 hover:scale-105"
           />
         </Link>
       </div>
