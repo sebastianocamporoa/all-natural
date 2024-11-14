@@ -39,11 +39,11 @@ const Navbar: FC = () => {
     <div id="navbar" className={`bg-[#f1e8d9] top-0 sticky z-10 shadow-lg bg-opacity-70 font-theseasons transition-transform duration-300 ${showNavbar ? "transform translate-y-0" : "transform -translate-y-full"}`}>
       <div className="container mx-auto p-4 flex justify-between items-center">
         <Link to="/" className="text-4xl font-bold" data-test="main-logo">
-          <img src="/logo-dark.svg" alt="Logo" className="h-24" />
+          <img src="/logo-dark.svg" alt="Logo" className="h-24 -ml-5 md:ml-0" />
         </Link>
 
         {/* Botón Hamburguesa */}
-        <div className="md:hidden text-2xl" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="md:hidden text-2xl mr-[25px]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
 

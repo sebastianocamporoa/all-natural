@@ -271,5 +271,35 @@
         "brand": "",
         "stock": 0,
         "discountPercentage": 0
+    },
+    {
+        "id": "reflejo-de-mar2",
+        "title": "Reflejo de mar",
+        "price": 70,
+        "description": "Pulsera de murano.",
+        "images": [
+            "/productos/reflejo-de-mar/reflejo-de-mar2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "reflejo-de-mar3",
+        "title": "Reflejo de mar",
+        "price": 70,
+        "description": "Pulsera de murano.",
+        "images": [
+            "/productos/reflejo-de-mar/reflejo-de-mar2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
     }
 ]
