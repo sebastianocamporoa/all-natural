@@ -278,7 +278,7 @@
         "price": 70,
         "description": "Pulsera de murano.",
         "images": [
-            "/productos/reflejo-de-mar/reflejo-de-mar2.jpg"
+            "/productos/reflejo-de-mar/reflejo-de-mar-2.jpg"
         ],
         "rating": 0,
         "thumbnail": "",
@@ -293,7 +293,97 @@
         "price": 70,
         "description": "Pulsera de murano.",
         "images": [
-            "/productos/reflejo-de-mar/reflejo-de-mar2.jpg"
+            "/productos/reflejo-de-mar/reflejo-de-mar-rosa.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "sol-de-amazonas",
+        "title": "Sol de amazonas",
+        "price": 65,
+        "description": "Pulsera lagrima de murano con piedra de rio.",
+        "images": [
+            "/productos/sol-de-amazonas/sol-de-amazonas.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "tierra-viva-beige",
+        "title": "Tierra viva en beige",
+        "price": 70,
+        "description": "Pulsera de piedra volcánica.",
+        "images": [
+            "/productos/tierra-viva/tierra-viva-beige.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "encanto-del-bosque-2",
+        "title": "Encanto del bosque",
+        "price": 70,
+        "description": "Pulsera ojo de tigre con dije a elección.",
+        "images": [
+            "/productos/encanto-del-bosque/encanto-del-bosque-2.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "reflejo-puro",
+        "title": "Reflejo puro",
+        "price": 70,
+        "description": "Pulsera de murano.",
+        "images": [
+            "/productos/reflejo-puro/reflejo-puro.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "aura-de-luna-azul",
+        "title": "Aura de luna",
+        "price": 70,
+        "description": "Pulsera de murano con bolita de murano.",
+        "images": [
+            "/productos/aura-de-luna/aura-de-luna-azul.jpg"
+        ],
+        "rating": 0,
+        "thumbnail": "",
+        "category": "",
+        "brand": "",
+        "stock": 0,
+        "discountPercentage": 0
+    },
+    {
+        "id": "aura-de-luna-verde",
+        "title": "Aura de luna",
+        "price": 70,
+        "description": "Pulsera de murano con bolita de murano.",
+        "images": [
+            "/productos/aura-de-luna/aura-de-luna-verde.jpg"
         ],
         "rating": 0,
         "thumbnail": "",
