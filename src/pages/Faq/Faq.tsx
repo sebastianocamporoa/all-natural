@@ -21,26 +21,63 @@ function Faq() {
     };
 
     return (
-        <div className='m-8 font-theseasons'>
-            <h1 className='text-4xl'>Preguntas Frecuentes</h1>
-            <ul>
-                {faqData.map((item, index: number) => (
-                    <li key={index} className="my-2">
-                        <div
-                            onClick={() => handleToggle(index)}
-                            className={`cursor-pointer p-2 border border-darkBg2 rounded-md transition-colors duration-300 
-                                ${expandedIndex === index ? 'bg-[#866c5a] text-white' : 'hover:bg-[#866c5a] hover:text-white'}`}
-                        >
-                            <h2 className='text-xl font-semibold'>{item.question}</h2>
-                        </div>
-                        {expandedIndex === index && (
-                            <div className="ml-5 mt-2 transition-all duration-300 ease-in-out">
-                                <p>{item.answer}</p>
-                            </div>
-                        )}
-                    </li>
-                ))}
-            </ul>
+        <div className="container my-24 mx-auto px-4 dark:bg-darkBg">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Columna 1: Foto */}
+                <div className="h-full w-full">
+                    <img
+                        src="/20.jpg"
+                        alt="Foto de All Natural"
+                        className="w-full h-full object-cover rounded-lg shadow-lg"
+                    />
+                </div>
+
+                {/* Columna 2: Título y párrafo */}
+                <div className="flex flex-col justify-center text-center lg:text-left">
+                    <h1 className="text-4xl font-theseasons mb-4">Preguntas Frecuentes</h1>
+                    <p className="text-lg">
+                        En <span className="font-bold">All Natural</span> estamos comprometidos con la calidad y personalización
+                        de nuestros productos. A continuación, te respondemos las dudas más comunes para brindarte la mejor
+                        experiencia.
+                    </p>
+                </div>
+
+                {/* Columna 3: Preguntas y respuestas */}
+                <div>
+                    <ul>
+                        {faqData.map((item, index: number) => (
+                            <li key={index} className="my-2">
+                                <div
+                                    onClick={() => handleToggle(index)}
+                                    onKeyDown={(e) => e.key === 'Enter' && handleToggle(index)}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-expanded={expandedIndex === index}
+                                    className={`flex justify-between items-center cursor-pointer p-3 border border-darkBg2 rounded-md transition-colors duration-300 ${
+                                        expandedIndex === index
+                                            ? 'bg-[#866c5a] text-white'
+                                            : 'hover:bg-[#866c5a] hover:text-white'
+                                    }`}
+                                >
+                                    <h2 className="text-xl font-semibold">{item.question}</h2>
+                                    <span
+                                        className={`transition-transform duration-300 ${
+                                            expandedIndex === index ? 'rotate-180' : 'rotate-0'
+                                        }`}
+                                    >
+                                        ▼
+                                    </span>
+                                </div>
+                                {expandedIndex === index && (
+                                    <div className="ml-5 mt-2 transition-all duration-300 ease-in-out">
+                                        <p>{item.answer}</p>
+                                    </div>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
