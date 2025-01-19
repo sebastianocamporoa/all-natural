@@ -13,11 +13,30 @@ function About() {
 
             {/* Descripción general */}
             <section aria-labelledby="descripcion-general">
-                <p id="descripcion-general" className='text-lg mt-8 text-center'>
+                <p id="descripcion-general" className='text-lg mt-8'>
                     df. Marca de joyería peruana artesanal con enfoque
                     integrado a la sostenibilidad y exclusividad
                     personalizada de sus diseños. All natural combina el
                     lujo consciente con la sostenibilidad.
+                </p>
+                <h2 id="title-quienes-somos" className='text-3xl font-semibold mt-4 lg:text-left text-darkBg2'>¿Quienes somos?</h2>
+                <p id="descripcion-general" className='text-lg mt-2'>
+                    La marca de joyas All Natural se destaca por ofrecer
+                    productos únicos que combinan el arte y el fuerte compromiso
+                    hacia la sostenibilidad. Elaborados completamente a mano
+                    por artesanos que cuidan hasta el más mínimo detalle y
+                    garantizan una atención personalizada y única en cada diseño.
+                    Se utilizan materiales sostenibles y responsables con el medio
+                    ambiente, garantizando que nuestras joyas no solo son productos
+                    en tendencia, sino también son éticas.
+                </p>
+                <h2 id="title-propuesta-valor" className='text-3xl font-semibold mt-4 lg:text-left text-darkBg2'>Propuesta de valor</h2>
+                <p id="descripcion-general" className='text-lg mt-2'>
+                    La propuesta de valor es el uso exclusivo de materiales sostenibles
+                    y empaques 100% eco-amigables y reutilizables. Lo que realmente
+                    distingue la marca es la parte innovadora sobre el modelo de circularidad.
+                    Los clientes tienen la opción de devolver los materiales de sus joyas
+                    para rediseño y reducción del impacto ambiental.
                 </p>
             </section>
 
